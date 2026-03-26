@@ -20,15 +20,18 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const validatedData = logSchema.parse(body);
-    
+
     const logService = Container.get(LogService);
     await logService.createLog(validatedData);
 
     return NextResponse.json({ status: "ok" });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json({ error: error.errors }, { status: 400 });
+      return NextResponse.json({ error: error.issues }, { status: 400 });
     }
-    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 },
+    );
   }
 }
