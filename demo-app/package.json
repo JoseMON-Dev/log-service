@@ -1,0 +1,14 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "log-client": "file:../log-client"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

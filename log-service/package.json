@@ -1,0 +1,22 @@
+{
+  "name": "log-service",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "reflect-metadata": "^0.2.2",
+    "typescript": "latest",
+    "typescript-ioc": "latest",
+    "zod": "latest"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "log-client",
+  "version": "1.0.0",
+  "main": "dist/logger.js",
+  "types": "dist/logger.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "latest"
+  }
+}

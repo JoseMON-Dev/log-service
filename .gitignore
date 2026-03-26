@@ -1,0 +1,8 @@
+node_modules
+dist
+.next
+.env
+*.log
+todos.json
+pnpm-lock.yaml
+.DS_Store
