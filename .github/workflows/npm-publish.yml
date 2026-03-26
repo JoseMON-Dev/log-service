@@ -3,7 +3,6 @@ name: Publish SDK to NPM
 on:
   push:
     branches: [ master ]
-    paths: [ 'log-client/**' ]
 
 jobs:
   publish:
